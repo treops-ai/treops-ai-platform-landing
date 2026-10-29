@@ -1,0 +1,18 @@
+/* =============================================================================
+ * TreOps Landing — Custom styles
+ * Shared styles (shiki, entrance-spin, sidebar, sonner, scrollbar) come from
+ * @treops/ui/styles/base.css. These are the landing-only keyframes that the
+ * hero board mockup and section animations rely on.
+ * ============================================================================= */
+
+/* LIVE OPS pulse dot */
+@keyframes lp-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--color-primary) 16%, transparent); }
+  50%       { box-shadow: 0 0 0 6px transparent; }
+}
+.animate-lp-pulse { animation: lp-pulse 1.8s infinite; }
+
+@keyframes agentworks-sweep {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(320%); }
+}
